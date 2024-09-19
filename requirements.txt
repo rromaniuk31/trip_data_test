@@ -2,3 +2,6 @@ numpy
 pandas
 pytest
 warnings
+datetime
+random
+fastparquet
