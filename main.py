@@ -49,3 +49,9 @@ cols = ["afterHoursDrivingDuration", "afterHoursStopDuration", "drivingDuration"
 seconds_df = convert_to_seconds(df, cols)
 
 seconds_df.to_parquet('trip_data_withSeconds.parquet')
+
+
+all_cols = list(df.columns)
+for i in all_cols:
+    if df[i].isnull().values.any() == True:
+        print(i)
