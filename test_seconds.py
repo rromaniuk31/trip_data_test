@@ -6,6 +6,7 @@ import main as m
 # Suppress the FutureWarning's
 @pytest.mark.filterwarnings("ignore")
 
+# Define our tests
 def test_seconds():
     # Create some testing data
     d = {'KMs': [200, 50, 2000, 4000], 'Duration': ['02:03:49', '00:26:49.123', '1.06:11:50.098', '2.12:22:50']}
